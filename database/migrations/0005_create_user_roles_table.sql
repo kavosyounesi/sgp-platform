@@ -1,11 +1,1 @@
-CREATE TABLE user_roles (
-
-    user_id BIGINT UNSIGNED NOT NULL,
-
-    role_id BIGINT UNSIGNED NOT NULL,
-
-    assigned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    PRIMARY KEY(user_id,role_id)
-
-);
+CREATE TABLE user_roles(user_id BIGINT UNSIGNED,role_id BIGINT UNSIGNED,assigned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(user_id,role_id));
